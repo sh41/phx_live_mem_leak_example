@@ -17,7 +17,7 @@ defmodule PhxLiveMemLeakExampleWeb.Router do
   scope "/", PhxLiveMemLeakExampleWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    live "/", SimpleLive
   end
 
   # Other scopes may use custom stacks.
